@@ -1,8 +1,8 @@
-resource "aws_key_pair" "keypair" {
-    key_name        = "fromterraform"
-    public_key      = file("~/.ssh/id_rsa.pub")
+#resource "aws_key_pair" "keypair" {
+    #key_name        = "fromterraform"
+    #public_key      = file("~/.ssh/id_rsa.pub")
 
-}
+#}
 
 
 resource "aws_instance" "webserver" {
