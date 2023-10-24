@@ -1,4 +1,4 @@
-node('any') {
+agent any {
     stage('sourcedoe') {
         git branch: 'main', url: 'https://github.com/nilesh2121/terraformlab.git'
     }
