@@ -9,7 +9,7 @@ pipeline {
         }
         stage('terra init') {
             steps {
-                sh 'teraform init '
+                sh 'teraform init'
             } 
         }
         stage('terra apply') {
@@ -18,3 +18,4 @@ pipeline {
             } 
         }                  
     }
+}    
