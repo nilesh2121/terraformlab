@@ -1,6 +1,6 @@
 resource "aws_key_pair" "keypair" {
     key_name        = "fromterraform"
-    public_key      = file("~/.ssh/id_rsa.pub")
+    public_key      = file("/home/ubuntu/root/.sshid_rsa.pub")
 
 }
 
@@ -25,7 +25,7 @@ resource "aws_instance" "webserver" {
     connection {
       type = "ssh"
       user = var.username
-      private_key = file("~/.ssh/id_rsa")
+      private_key = file("/home/ubuntu/root/.sshid_rsa")
       host = self.public_ip
       
     }
