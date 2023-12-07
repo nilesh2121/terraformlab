@@ -7,7 +7,7 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/nilesh2121/terraformlab.git'
             } 
         }
-        stage('terra init') {
+        stage('teraform init') {
             steps {
                 sh 'teraform init'
             } 
