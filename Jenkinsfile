@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('sourcedoe') {
+        stage('Checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/nilesh2121/terraformlab.git'
             } 
